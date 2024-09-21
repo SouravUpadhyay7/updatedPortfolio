@@ -1,0 +1,97 @@
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    z-index: 1; /* Ensure grid items are positioned above the background */
+}
+
+.cert-box {
+    display: grid;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+   
+    background-color: rgba(29, 29, 31, 0.8);
+}
+
+.cert-box:hover {
+    box-shadow: 0 0 15px 5px rgb(48, 69, 231);
+}
+
+.cert-header {
+   
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.cert-header img {
+    width : 100%;
+    border-radius : 5px;
+}
+
+.cert-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #888;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cert-button:hover {
+    background-color: #59e0aa;
+}
+
+
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    position: relative;
+    background-color: #1d1d1f; /* Set a dark background */
+    color: white; /* Ensure text is readable */
+    overflow: auto; 
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal; /* Change to your desired font family */
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    z-index: 1; /* Ensure grid items are positioned above the background */
+    width: 100%; /* Optional: Set width for better centering */
+    max-width: 1200px; /* Optional: Limit the width for larger screens */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Additional styles for the wave or particle effect */
+#particles-js {
+    position: fixed; /* Fix the particle effect in the background */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure particles are behind content */
+}
+
+section#certification {
+    position: relative; /* Ensure the certification section is on top */
+    padding: 20px; /* Add padding for spacing */
+    min-height: 100vh; /* Make sure it fills the viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+}
+
+
+.c {
+    font-size: 2.5rem; /* Increase the font size */
+    letter-spacing: 2px; /* Add space between letters */
+    margin-bottom: 20px; /* Optional: Add some space below the title */
+}
+

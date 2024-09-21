@@ -1,0 +1,79 @@
+/* Body styling */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #0d0d0d;
+    overflow-y: auto; /* Allow vertical scrolling */
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 25px;
+   
+}
+
+/* Particles container */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Content styling (for heading and description) */
+.content {
+    position: relative;
+    z-index: 1;
+    color: #00ffff;
+    text-align: center;
+    margin-top: 50px; /* Adjust to position content relative to particles */
+}
+
+/* Skills container */
+.skills-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 50px; /* To add space between heading and skill cards */
+}
+
+/* Skill card styling */
+.skill-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.skill-card img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    color: white;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.skill-card:hover img {
+    transform: scale(1.2);
+}
+
